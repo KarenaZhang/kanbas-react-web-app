@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kanbas - Edit Profile</title>
+</head>
+<body>
+    <!-- Profile Editing Form -->
+    <h1>Edit Profile</h1>
+    <form id="profile-edit-form" action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" value="User's Name" required/><br/>
+        
+        <label for="contact">Contact:</label>
+        <input type="text" id="contact" name="contact" value="User's Contact Info" required/><br/>
+        
+        <label for="biography">Biography:</label><br/>
+        <textarea id="biography" name="biography" rows="5" cols="40">[User's Biography]</textarea><br/>
+        
+        <label for="links">Links:</label>
+        <ul>
+            <li><input type="text" id="link1" name="links" value="Link 1"/></li>
+            <li><input type="text" id="link2" name="links" value="Link 2"/></li>
+            <!-- Add more link fields here -->
+        </ul>
+        
+        <input type="submit" value="Save Profile" id="save-button"/>
+        <a href="profile.html">Cancel Editing</a>
+    </form>
+</body>
+</html>
