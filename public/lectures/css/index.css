@@ -1,0 +1,27 @@
+:root {
+    --yellow: #f1c40f
+}
+
+.bg-yellow-2 {
+    background-color: var(--yellow);
+}
+
+p#lorem1 {
+    background-color:blue;
+    color:white;
+    font-size:30px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/*p#lorem2 {
+    background-color:blue;
+}*/
+
+.wd-flex-row-cointainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.wd-flex-grow-1 {
+    flex-grow: 1;
+}
