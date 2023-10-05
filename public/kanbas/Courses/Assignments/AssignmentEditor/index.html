@@ -1,29 +1,118 @@
-<label for="assignmentName">Assignment Name</label> <br />
-<input 
-    type="text"
-    value="Assignment 1 - HTML" 
-    id="assignmentName" 
-    placeholder="Assignment name" 
-/>
-<h3>Description</h3>
-<textarea cols="50" rows="5">
-This is the first assignment to build Kanbas
-</textarea>
+<!--<label for="assignmentName">Assignment Name</label> <br />-->
+<!--<input-->
+<!--    type="text"-->
+<!--    value="Assignment 1 - HTML"-->
+<!--    id="assignmentName"-->
+<!--    placeholder="Assignment name"-->
+<!--/>-->
+<!--<h3>Description</h3>-->
+<!--<textarea cols="50" rows="5">-->
+<!--This is the first assignment to build Kanbas-->
+<!--</textarea>-->
 
-<h3>Points</h3>
-<input value="100" type="number" max="100" min="50" step="2"/>
+<!--<h3>Points</h3>-->
+<!--<input value="100" type="number" max="100" min="50" step="2"/>-->
 
-<h3>Submission Type</h3>
-<input type="checkbox" id="textEntry" /> 
-<label for="textEntry">Text Entry</label><br />
-<input type="checkbox" checked /> Website URL <br />
-<input type="checkbox" /> Media Recordings <br />
-<input type="checkbox" /> File Uploads <br />
+<!--<h3>Submission Type</h3>-->
+<!--<input type="checkbox" id="textEntry" />-->
+<!--<label for="textEntry">Text Entry</label><br />-->
+<!--<input type="checkbox" checked /> Website URL <br />-->
+<!--<input type="checkbox" /> Media Recordings <br />-->
+<!--<input type="checkbox" /> File Uploads <br />-->
 
-<h3>Due Date</h3>
-<input type="date" value="2020-09-06" min="2020-09-01" max="2020-09-09"/>
+<!--<h3>Due Date</h3>-->
+<!--<input type="date" value="2020-09-06" min="2020-09-01" max="2020-09-09"/>-->
 
-<h3>other</h3>
-<input type="color" value="#ff0000" />
-<input type="email" />
-<input type="Tel" />
+<!--<h3>other</h3>-->
+<!--<input type="color" value="#ff0000" />-->
+<!--<input type="email" />-->
+<!--<input type="Tel" />-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container mt-4">
+    <h2 class="text-center">Edit Assignment</h2>
+    <form>
+        <!-- Assignment Name -->
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="assignmentName">Assignment Name</label>
+                    <input type="text" class="form-control" id="assignmentName" placeholder="Assignment name" value="Assignment 1 - HTML">
+                </div>
+            </div>
+        </div>
+
+        <!-- Description -->
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <textarea class="form-control" id="description" rows="5">This is the first assignment to build Kanbas</textarea>
+                </div>
+            </div>
+        </div>
+
+        <!-- Points -->
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="points">Points</label>
+                    <input type="number" class="form-control" id="points" min="50" max="100" step="2" value="100">
+                </div>
+            </div>
+        </div>
+
+        <!-- Due Date -->
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="dueDate">Due Date</label>
+                    <input type="date" class="form-control" id="dueDate" min="2020-09-01" max="2020-09-09" value="2020-09-06">
+                </div>
+            </div>
+        </div>
+
+        <!-- Submission Type -->
+        <div class="row">
+            <div class="col-md-6">
+                <label for="submissionType">Submission Type</label>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="textEntry">
+                    <label class="form-check-label" for="textEntry">Text Entry</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="websiteURL" checked>
+                    <label class="form-check-label" for="websiteURL">Website URL</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="mediaRecordings">
+                    <label class="form-check-label" for="mediaRecordings">Media Recordings</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="fileUploads">
+                    <label class="form-check-label" for="fileUploads">File Uploads</label>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Save Button -->
+        <div class="row">
+            <div class="col-md-6">
+                <button type="submit" class="btn btn-success float-end">Save</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<!-- Bootstrap JS and jQuery (for form validation) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

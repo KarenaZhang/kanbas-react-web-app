@@ -1,11 +1,11 @@
 function kanbasNavigation() {
     return `
-<ul>
-    <li><a href="/kanbas/Account/Profile/screen.html"></li>
-    <li><a href="/kanbas/Dashboard/screen.html">Dashboard</li>
-    <li><a href="/kanbas/Courses/Home/screen.html"></li>
-</ul>
-`;
+        <ul>
+            <li><a href="/kanbas/Account/Profile/screen.html">Profile</a></li>
+            <li><a href="/kanbas/Dashboard/dashboard.html">Dashboard</a></li>
+            <li><a href="/kanbas/Courses/Home/screen.html">Courses</a></li>
+        </ul>
+    `;
 }
 
 export default kanbasNavigation;

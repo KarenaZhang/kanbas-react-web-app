@@ -1,126 +1,227 @@
-<botton>Import</botton>
-<select>
-    <option>Export</option>
-    <option>Unpublish</option>
-</select>
-<botton>Configure</botton>
+<!--<botton>Import</botton>-->
+<!--<select>-->
+<!--    <option>Export</option>-->
+<!--    <option>Unpublish</option>-->
+<!--</select>-->
+<!--<botton>Configure</botton>-->
 
-<table width="100%">
-    <tr>
-        <td>
-            Student Names<br />
-            <input 
-                title="Type the name of the student to search for"
-                placeholder="Search Students" 
-            />
-        </td>
-        <td>
-            Assignment Names<br />
-            <input />
-        </td>
-    </tr>
-</table>
+<!--<table width="100%">-->
+<!--    <tr>-->
+<!--        <td>-->
+<!--            Student Names<br />-->
+<!--            <input -->
+<!--                title="Type the name of the student to search for"-->
+<!--                placeholder="Search Students" -->
+<!--            />-->
+<!--        </td>-->
+<!--        <td>-->
+<!--            Assignment Names<br />-->
+<!--            <input />-->
+<!--        </td>-->
+<!--    </tr>-->
+<!--</table>-->
 
-<table width="100%">  
-    <thead>
+<!--<table width="100%">  -->
+<!--    <thead>-->
+<!--        <tr>-->
+<!--            <th>Student Name</th>-->
+<!--            <th>A1 - HTML</th>-->
+<!--            <th>A2 - CSS</th>-->
+<!--            <th>A3 - JS</th>-->
+<!--            <th>A4 - PHP</th>-->
+<!--            <th>A5 - SQL</th>-->
+<!--            <th>A6 - React</th>-->
+<!--            <th>A7 - Node</th>-->
+<!--            <th>A8 - Express</th>-->
+<!--            <th>A9 - MongoDB</th>-->
+<!--            <th>A10 - Mongoose</th>-->
+<!--            <th>A11 - Redux</th>-->
+<!--            <th>Q1</th>-->
+<!--            <th>Q2</th>-->
+<!--            <th>Q3</th>-->
+<!--            <th>Q4</th>-->
+<!--            <th>Q5</th>-->
+<!--            <th>Exam 1</th>-->
+<!--            <th>Exam 2</th>-->
+<!--            <th>Exam 3</th>-->
+<!--            <th>Exam 4</th>-->
+<!--            <th>Exam 5</th>-->
+<!--        </tr>-->
+<!--    </thead> -->
+<!--    <tbody>-->
+<!--        <tr>-->
+<!--            <td>Karena Zhang</td>-->
+<!--            <td>100%</td>-->
+<!--            <td>100%</td>-->
+<!--            <td>100%</td>-->
+<!--            <td>100%</td>-->
+<!--            <td>100%</td>-->
+<!--            <td>100%</td>-->
+<!--            <td>100%</td>-->
+<!--            <td>100%</td>-->
+<!--            <td>100%</td>-->
+<!--            <td>100%</td>-->
+<!--            <td>100%</td>-->
+<!--            <td>100%</td>-->
+<!--            <td>100%</td>-->
+<!--            <td>100%</td>-->
+<!--            <td>100%</td>-->
+<!--            <td>100%</td>-->
+<!--            <td>100%</td>-->
+<!--            <td>100%</td>-->
+<!--            <td>100%</td>-->
+<!--            <td>100%</td>-->
+<!--            <td>100%</td>-->
+<!--        </tr>-->
+<!--        <tr>-->
+<!--            <td>Alex Liu</td>-->
+<!--            <td>100%</td>-->
+<!--            <td>100%</td>-->
+<!--            <td>100%</td>-->
+<!--            <td>100%</td>-->
+<!--            <td>100%</td>-->
+<!--            <td>100%</td>-->
+<!--            <td>100%</td>-->
+<!--            <td>100%</td>-->
+<!--            <td>100%</td>-->
+<!--            <td>100%</td>-->
+<!--            <td>100%</td>-->
+<!--            <td>100%</td>-->
+<!--            <td>100%</td>-->
+<!--            <td>100%</td>-->
+<!--            <td>100%</td>-->
+<!--            <td>100%</td>-->
+<!--            <td>100%</td>-->
+<!--            <td>100%</td>-->
+<!--            <td>100%</td>-->
+<!--            <td>100%</td>-->
+<!--            <td>100%</td>-->
+<!--        </tr>-->
+<!--        <tr>-->
+<!--            <td>Xingyu Liu</td>-->
+<!--            <td>100%</td>-->
+<!--            <td>100%</td>-->
+<!--            <td>100%</td>-->
+<!--            <td>100%</td>-->
+<!--            <td>100%</td>-->
+<!--            <td>100%</td>-->
+<!--            <td>100%</td>-->
+<!--            <td>100%</td>-->
+<!--            <td>100%</td>-->
+<!--            <td>100%</td>-->
+<!--            <td>100%</td>-->
+<!--            <td>100%</td>-->
+<!--            <td>100%</td>-->
+<!--            <td>100%</td>-->
+<!--            <td>100%</td>-->
+<!--            <td>100%</td>-->
+<!--            <td>100%</td>-->
+<!--            <td>100%</td>-->
+<!--            <td>100%</td>-->
+<!--            <td>100%</td>-->
+<!--            <td>100%</td>-->
+<!--        </tr>-->
+<!--    </tbody>-->
+<!--    <tfoot></tfoot>-->
+<!--</table>-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="grade.css"> <!-- Add your custom CSS here -->
+    <style>
+        /* Add your custom styles here if needed */
+    </style>
+    <title>Grades</title>
+</head>
+<body>
+<!-- Course Navigation Sidebar -->
+<nav class="navbar bg-light">
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" href="#">Dashboard</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Courses</a>
+        </li>
+        <li class="nav-item selected">
+            <a class="nav-link" href="#">
+                <i class="fas fa-chevron-right"></i>
+                Grades
+            </a>
+        </li>
+    </ul>
+</nav>
+
+<!-- Breadcrumb -->
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Course Name</a></li>
+        <li class="breadcrumb-item"><a href="#">Term</a></li>
+        <li class="breadcrumb-item"><a href="#">Section</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Grades</li>
+    </ol>
+</nav>
+
+<!-- Buttons and Dropdown -->
+<div class="container mt-3">
+    <div class="row">
+        <div class="col-md-3">
+            <button class="btn btn-primary">
+                <i class="fas fa-file-import"></i> Import
+            </button>
+        </div>
+        <div class="col-md-3">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="exportDropdown" data-toggle="dropdown">
+                    <i class="fas fa-file-export"></i> Export
+                </button>
+                <div class="dropdown-menu" aria-labelledby="exportDropdown">
+                    <a class="dropdown-item" href="#">Option 1</a>
+                    <a class="dropdown-item" href="#">Option 2</a>
+                    <!-- Add more export options here if needed -->
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <button class="btn btn-success">
+                <i class="fas fa-edit"></i> Edit
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Table -->
+<div class="container mt-3">
+    <table class="table">
+        <thead>
         <tr>
             <th>Student Name</th>
             <th>A1 - HTML</th>
             <th>A2 - CSS</th>
             <th>A3 - JS</th>
-            <th>A4 - PHP</th>
-            <th>A5 - SQL</th>
-            <th>A6 - React</th>
-            <th>A7 - Node</th>
-            <th>A8 - Express</th>
-            <th>A9 - MongoDB</th>
-            <th>A10 - Mongoose</th>
-            <th>A11 - Redux</th>
-            <th>Q1</th>
-            <th>Q2</th>
-            <th>Q3</th>
-            <th>Q4</th>
-            <th>Q5</th>
-            <th>Exam 1</th>
-            <th>Exam 2</th>
-            <th>Exam 3</th>
-            <th>Exam 4</th>
-            <th>Exam 5</th>
+            <!-- Add more table headers as needed -->
         </tr>
-    </thead> 
-    <tbody>
+        </thead>
+        <tbody>
         <tr>
             <td>Karena Zhang</td>
-            <td>100%</td>
-            <td>100%</td>
-            <td>100%</td>
-            <td>100%</td>
-            <td>100%</td>
-            <td>100%</td>
-            <td>100%</td>
-            <td>100%</td>
-            <td>100%</td>
-            <td>100%</td>
-            <td>100%</td>
-            <td>100%</td>
-            <td>100%</td>
-            <td>100%</td>
-            <td>100%</td>
-            <td>100%</td>
-            <td>100%</td>
-            <td>100%</td>
-            <td>100%</td>
-            <td>100%</td>
-            <td>100%</td>
+            <td><input class="form-control" type="text" value="100%"></td>
+            <td>95%</td>
+            <td>90%</td>
+            <!-- Add more table data rows as needed -->
         </tr>
-        <tr>
-            <td>Alex Liu</td>
-            <td>100%</td>
-            <td>100%</td>
-            <td>100%</td>
-            <td>100%</td>
-            <td>100%</td>
-            <td>100%</td>
-            <td>100%</td>
-            <td>100%</td>
-            <td>100%</td>
-            <td>100%</td>
-            <td>100%</td>
-            <td>100%</td>
-            <td>100%</td>
-            <td>100%</td>
-            <td>100%</td>
-            <td>100%</td>
-            <td>100%</td>
-            <td>100%</td>
-            <td>100%</td>
-            <td>100%</td>
-            <td>100%</td>
-        </tr>
-        <tr>
-            <td>Xingyu Liu</td>
-            <td>100%</td>
-            <td>100%</td>
-            <td>100%</td>
-            <td>100%</td>
-            <td>100%</td>
-            <td>100%</td>
-            <td>100%</td>
-            <td>100%</td>
-            <td>100%</td>
-            <td>100%</td>
-            <td>100%</td>
-            <td>100%</td>
-            <td>100%</td>
-            <td>100%</td>
-            <td>100%</td>
-            <td>100%</td>
-            <td>100%</td>
-            <td>100%</td>
-            <td>100%</td>
-            <td>100%</td>
-            <td>100%</td>
-        </tr>
-    </tbody>
-    <tfoot></tfoot>
-</table>
+        <!-- Add more data rows as needed -->
+        </tbody>
+    </table>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="bootstrap.min.js"></script>
+</body>
+</html>

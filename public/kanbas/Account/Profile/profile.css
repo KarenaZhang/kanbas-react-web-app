@@ -1,0 +1,23 @@
+/* Custom styles for the Profile screen */
+.profile-icon {
+    text-align: center;
+}
+
+.contact-section,
+.biography-section,
+.links-section {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.links-section a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+#edit-profile-btn {
+    background-color: red;
+    color: white;
+    margin-top: 20px;
+}

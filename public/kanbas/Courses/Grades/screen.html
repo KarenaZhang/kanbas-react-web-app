@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="/kanbas/Courses/CourseNavigations/index.css" />
         <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.css" />
         <link rel="stylesheet" href="/lib/bootstrap/bootstrap.min.css" />
+
     </head>
     <body>
         <div class="wd-flex-row-container">
@@ -37,14 +38,33 @@
                     <li class="wd-active"><a href="/kanbas/Courses/Grades/screen.html">Grades</a></li>
                 </ul>
             </div>
-            <div class="wd-flex-grow-1">                    
-                <botton>Import</botton>
-                <select>
-                    <option>Export</option>
-                    <option>Unpublish</option>
-                </select>
-                <botton>Configure</botton>
-    
+            <div class="container mt-3">
+                <div class="row">
+                    <div class="col-md-3">
+                        <button class="btn">
+                            <i class="fa fa-upload" aria-hidden="true"></i> Import
+                        </button>
+                    </div>
+                    <div class="col-md-3">
+                        <!-- Export Dropdown with Icon -->
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle" type="button" id="exportDropdown" data-toggle="dropdown">
+                                <i class="fa fa-download" aria-hidden="true"></i> Export
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="exportDropdown">
+                                <a class="dropdown-item" href="#">Option 1</a>
+                                <a class="dropdown-item" href="#">Option 2</a>
+                                <!-- Add more export options here if needed -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <!-- Edit Button with Icon -->
+                        <button class="btn">
+                            <i class="fa fa-edit" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
                 <table class="table">
                     <tbody>
                         <tr>
@@ -57,7 +77,7 @@
                             </td>
                             <td>
                                 Assignment Names<br />
-                                <input />
+                                <input value="Default Value" class="form-control form-control-sm" type="text">
                             </td>
                         </tr>
                     </tbody>
@@ -66,6 +86,104 @@
                 <div class="table-responsive">
                     <table class="table">  
                         <thead>
+                            <tr>
+<!--                                <th>Student Name</th>-->
+<!--                                <th>A1 - HTML</th>-->
+<!--                                <th>A2 - CSS</th>-->
+<!--                                <th>A3 - JS</th>-->
+<!--                                <th>A4 - PHP</th>-->
+<!--                                <th>A5 - SQL</th>-->
+<!--                                <th>A6 - React</th>-->
+<!--                                <th>A7 - Node</th>-->
+<!--                                <th>A8 - Express</th>-->
+<!--                                <th>A9 - MongoDB</th>-->
+<!--                                <th>A10 - Mongoose</th>-->
+<!--                                <th>A11 - Redux</th>-->
+<!--                                <th>Q1</th>-->
+<!--                                <th>Q2</th>-->
+<!--                                <th>Q3</th>-->
+<!--                                <th>Q4</th>-->
+<!--                                <th>Q5</th>-->
+<!--                                <th>Exam 1</th>-->
+<!--                                <th>Exam 2</th>-->
+<!--                                <th>Exam 3</th>-->
+<!--                                <th>Exam 4</th>-->
+<!--                                <th>Exam 5</th>-->
+<!--                            </tr>-->
+<!--                        </thead> -->
+<!--                        <tbody>-->
+<!--                            <tr>-->
+<!--                                <td>Karena Zhang</td>-->
+<!--                                <td>100%</td>-->
+<!--                                <td>100%</td>-->
+<!--                                <td>100%</td>-->
+<!--                                <td>100%</td>-->
+<!--                                <td>100%</td>-->
+<!--                                <td>100%</td>-->
+<!--                                <td>100%</td>-->
+<!--                                <td>100%</td>-->
+<!--                                <td>100%</td>-->
+<!--                                <td>100%</td>-->
+<!--                                <td>100%</td>-->
+<!--                                <td>100%</td>-->
+<!--                                <td>100%</td>-->
+<!--                                <td>100%</td>-->
+<!--                                <td>100%</td>-->
+<!--                                <td>100%</td>-->
+<!--                                <td>100%</td>-->
+<!--                                <td>100%</td>-->
+<!--                                <td>100%</td>-->
+<!--                                <td>100%</td>-->
+<!--                                <td>100%</td>-->
+<!--                            </tr>-->
+<!--                            <tr>-->
+<!--                                <td>Alex Liu</td>-->
+<!--                                <td>100%</td>-->
+<!--                                <td>100%</td>-->
+<!--                                <td>100%</td>-->
+<!--                                <td>100%</td>-->
+<!--                                <td>100%</td>-->
+<!--                                <td>100%</td>-->
+<!--                                <td>100%</td>-->
+<!--                                <td>100%</td>-->
+<!--                                <td>100%</td>-->
+<!--                                <td>100%</td>-->
+<!--                                <td>100%</td>-->
+<!--                                <td>100%</td>-->
+<!--                                <td>100%</td>-->
+<!--                                <td>100%</td>-->
+<!--                                <td>100%</td>-->
+<!--                                <td>100%</td>-->
+<!--                                <td>100%</td>-->
+<!--                                <td>100%</td>-->
+<!--                                <td>100%</td>-->
+<!--                                <td>100%</td>-->
+<!--                                <td>100%</td>-->
+<!--                            </tr>-->
+<!--                            <tr>-->
+<!--                                <td>Xingyu Liu</td>-->
+<!--                                <td>100%</td>-->
+<!--                                <td>100%</td>-->
+<!--                                <td>100%</td>-->
+<!--                                <td>100%</td>-->
+<!--                                <td>100%</td>-->
+<!--                                <td>100%</td>-->
+<!--                                <td>100%</td>-->
+<!--                                <td>100%</td>-->
+<!--                                <td>100%</td>-->
+<!--                                <td>100%</td>-->
+<!--                                <td>100%</td>-->
+<!--                                <td>100%</td>-->
+<!--                                <td>100%</td>-->
+<!--                                <td>100%</td>-->
+<!--                                <td>100%</td>-->
+<!--                                <td>100%</td>-->
+<!--                                <td>100%</td>-->
+<!--                                <td>100%</td>-->
+<!--                                <td>100%</td>-->
+<!--                                <td>100%</td>-->
+<!--                                <td>100%</td>-->
+<!--                            </tr>-->
                             <tr>
                                 <th>Student Name</th>
                                 <th>A1 - HTML</th>
@@ -79,91 +197,61 @@
                                 <th>A9 - MongoDB</th>
                                 <th>A10 - Mongoose</th>
                                 <th>A11 - Redux</th>
-                                <th>Q1</th>
-                                <th>Q2</th>
-                                <th>Q3</th>
-                                <th>Q4</th>
-                                <th>Q5</th>
-                                <th>Exam 1</th>
-                                <th>Exam 2</th>
-                                <th>Exam 3</th>
-                                <th>Exam 4</th>
-                                <th>Exam 5</th>
                             </tr>
-                        </thead> 
+                        </thead>
                         <tbody>
-                            <tr>
-                                <td>Karena Zhang</td>
-                                <td>100%</td>
-                                <td>100%</td>
-                                <td>100%</td>
-                                <td>100%</td>
-                                <td>100%</td>
-                                <td>100%</td>
-                                <td>100%</td>
-                                <td>100%</td>
-                                <td>100%</td>
-                                <td>100%</td>
-                                <td>100%</td>
-                                <td>100%</td>
-                                <td>100%</td>
-                                <td>100%</td>
-                                <td>100%</td>
-                                <td>100%</td>
-                                <td>100%</td>
-                                <td>100%</td>
-                                <td>100%</td>
-                                <td>100%</td>
-                                <td>100%</td>
-                            </tr>
-                            <tr>
-                                <td>Alex Liu</td>
-                                <td>100%</td>
-                                <td>100%</td>
-                                <td>100%</td>
-                                <td>100%</td>
-                                <td>100%</td>
-                                <td>100%</td>
-                                <td>100%</td>
-                                <td>100%</td>
-                                <td>100%</td>
-                                <td>100%</td>
-                                <td>100%</td>
-                                <td>100%</td>
-                                <td>100%</td>
-                                <td>100%</td>
-                                <td>100%</td>
-                                <td>100%</td>
-                                <td>100%</td>
-                                <td>100%</td>
-                                <td>100%</td>
-                                <td>100%</td>
-                                <td>100%</td>
-                            </tr>
-                            <tr>
-                                <td>Xingyu Liu</td>
-                                <td>100%</td>
-                                <td>100%</td>
-                                <td>100%</td>
-                                <td>100%</td>
-                                <td>100%</td>
-                                <td>100%</td>
-                                <td>100%</td>
-                                <td>100%</td>
-                                <td>100%</td>
-                                <td>100%</td>
-                                <td>100%</td>
-                                <td>100%</td>
-                                <td>100%</td>
-                                <td>100%</td>
-                                <td>100%</td>
-                                <td>100%</td>
-                                <td>100%</td>
-                                <td>100%</td>
-                                <td>100%</td>
-                                <td>100%</td>
-                                <td>100%</td>
-                            </tr>
+                        <tr>
+                            <td>Karena Zhang</td>
+                            <td><input class="form-control form-control-sm" type="text" value="100%"></td>
+                            <td>95%</td>
+                            <td>90%</td>
+                            <td>90%</td>
+                            <td>90%</td>
+                            <td>90%</td>
+                            <td>90%</td>
+                            <td>90%</td>
+                            <td>90%</td>
+                            <td>90%</td>
+                        </tr>
+                        <tr>
+                            <td>Alex Liu</td>
+                            <td><input class="form-control form-control-sm" type="text" value="100%"></td>
+                            <td>95%</td>
+                            <td>90%</td>
+                            <td>90%</td>
+                            <td>90%</td>
+                            <td>90%</td>
+                            <td>90%</td>
+                            <td>90%</td>
+                            <td>90%</td>
+                            <td>90%</td>
+                        </tr>
+                        <tr>
+                            <td>Liyang Liu</td>
+                            <td><input class="form-control form-control-sm" type="text" value="100%"></td>
+                            <td>95%</td>
+                            <td>90%</td>
+                            <td>90%</td>
+                            <td>90%</td>
+                            <td>90%</td>
+                            <td>90%</td>
+                            <td>90%</td>
+                            <td>90%</td>
+                            <td>90%</td>
+                        </tr>
+                        <tr>
+                            <td>Xingyu Liu</td>
+                            <td><input class="form-control form-control-sm" type="text" value="100%"></td>
+                            <td>95%</td>
+                            <td>90%</td>
+                            <td>90%</td>
+                            <td>90%</td>
+                            <td>90%</td>
+                            <td>90%</td>
+                            <td>90%</td>
+                            <td>90%</td>
+                            <td>90%</td>
+                        </tr>
                         </tbody>
                     </table>
                 </div>

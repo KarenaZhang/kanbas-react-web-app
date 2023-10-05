@@ -1,30 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Kanbas - Edit Profile</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <title>Edit Profile</title>
 </head>
 <body>
-    <!-- Profile Editing Form -->
-    <h1>Edit Profile</h1>
-    <form id="profile-edit-form" action="#" method="post">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" value="User's Name" required/><br/>
-        
-        <label for="contact">Contact:</label>
-        <input type="text" id="contact" name="contact" value="User's Contact Info" required/><br/>
-        
-        <label for="biography">Biography:</label><br/>
-        <textarea id="biography" name="biography" rows="5" cols="40">[User's Biography]</textarea><br/>
-        
-        <label for="links">Links:</label>
-        <ul>
-            <li><input type="text" id="link1" name="links" value="Link 1"/></li>
-            <li><input type="text" id="link2" name="links" value="Link 2"/></li>
-            <!-- Add more link fields here -->
-        </ul>
-        
-        <input type="submit" value="Save Profile" id="save-button"/>
-        <a href="profile.html">Cancel Editing</a>
+<div class="container mt-4">
+    <h2>Edit Profile</h2>
+    <form>
+        <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" value="Full Name">
+        </div>
+        <div class="mb-3">
+            <label for="pronouns" class="form-label">Pronouns</label>
+            <input type="text" class="form-control" id="pronouns" value="Pronouns">
+        </div>
+        <div class="mb-3">
+            <label for="title" class="form-label">Title</label>
+            <input type="text" class="form-control" id="title" value="Title">
+        </div>
+        <div class="contact-section mb-3">
+            <h5>Contact</h5>
+            <p>Email: example@email.com</p>
+            <p>Phone: (123) 456-7890</p>
+        </div>
+        <div class="biography-section mb-3">
+            <h5>Biography</h5>
+            <textarea class="form-control" rows="4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non efficitur odio.</textarea>
+        </div>
+        <div class="links-section mb-3">
+            <h5>Links</h5>
+            <div class="row">
+                <div class="col">
+                    <div class="mb-3">
+                        <label for="link1-title" class="form-label">Title</label>
+                        <input type="text" class="form-control" id="link1-title" value="Link 1">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="mb-3">
+                        <label for="link1-url" class="form-label">URL</label>
+                        <input type="text" class="form-control" id="link1-url" value="https://www.example.com">
+                    </div>
+                </div>
+            </div>
+            <!-- Add more link input fields as needed -->
+        </div>
+        <div class="text-end">
+            <button class="btn btn-primary" id="save-profile-btn" style="background-color: red;">
+                <i class="fas fa-pencil-alt"></i> Save Profile
+            </button>
+            <button class="btn btn-secondary" id="cancel-editing-btn">
+                <i class="fas fa-times"></i> Cancel Editing
+            </button>
+        </div>
     </form>
+</div>
 </body>
 </html>

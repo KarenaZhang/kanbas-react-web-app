@@ -1,26 +1,75 @@
+<!--<link rel="stylesheet" href="/style.css" />-->
+<!--<link rel="stylesheet" href="index.css" />-->
+
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+<!--<head>-->
+<!--    <title>Kanbas - Profile</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--    &lt;!&ndash; Profile Header &ndash;&gt;-->
+<!--    <h1>Welcome, [Karena]</h1>-->
+
+<!--    &lt;!&ndash; Profile Information &ndash;&gt;-->
+<!--    <div id="profile-info">-->
+<!--        <h2>Profile Information</h2>-->
+<!--        <p><strong>Name:</strong> [Keke Zhang]</p>-->
+<!--        <p><strong>Contact:</strong> [xxxx.northeastern.edu]</p>-->
+<!--        <p><strong>Biography:</strong></p>-->
+<!--        <p>[User's Biography]</p>-->
+<!--        <p><strong>Links:</strong></p>-->
+<!--        <ul>-->
+<!--            <li><a href="#">Link 1</a></li>-->
+<!--            <li><a href="#">Link 2</a></li>-->
+<!--            &lt;!&ndash; Add more links here &ndash;&gt;-->
+<!--        </ul>-->
+<!--        <p><a href="editProfile.html">Edit Profile</a></p>-->
+<!--    </div>-->
+<!--</body>-->
+<!--</html>-->
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Kanbas - Profile</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link rel="stylesheet" href="profile.css">
+    <title>Profile</title>
 </head>
 <body>
-    <!-- Profile Header -->
-    <h1>Welcome, [Karena]</h1>
-    
-    <!-- Profile Information -->
-    <div id="profile-info">
-        <h2>Profile Information</h2>
-        <p><strong>Name:</strong> [Keke Zhang]</p>
-        <p><strong>Contact:</strong> [xxxx.northeastern.edu]</p>
-        <p><strong>Biography:</strong></p>
-        <p>[User's Biography]</p>
-        <p><strong>Links:</strong></p>
-        <ul>
-            <li><a href="#">Link 1</a></li>
-            <li><a href="#">Link 2</a></li>
-            <!-- Add more links here -->
-        </ul>
-        <p><a href="editProfile.html">Edit Profile</a></p>
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="profile-icon">
+                <i class="fas fa-user fa-5x"></i>
+            </div>
+            <h4 class="text-center">Full Name</h4>
+        </div>
+        <div class="col-md-9">
+            <div class="contact-section">
+                <h5>Contact</h5>
+                <p>Email: example@email.com</p>
+                <p>Phone: (123) 456-7890</p>
+            </div>
+            <div class="biography-section">
+                <h5>Biography</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non efficitur odio.</p>
+            </div>
+            <div class="links-section">
+                <h5>Links</h5>
+                <a href="https://www.youtube.com/channel" target="_blank">YouTube Channel</a>
+            </div>
+            <div class="text-center mt-3">
+                <button class="btn btn-primary" id="edit-profile-btn">
+                    <a href="editProfile.html" class="btn btn-primary">
+                    <i class="fas fa-pencil-alt mr-2"></i>Edit Profile
+                </button>
+            </div>
+        </div>
     </div>
+</div>
 </body>
 </html>

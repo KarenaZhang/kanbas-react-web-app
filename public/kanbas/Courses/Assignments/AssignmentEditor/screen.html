@@ -1,63 +1,175 @@
-<link rel="stylesheet" href="/lib/bootstrap/bootstrap.min.css" />
-<link rel="stylesheet" href="./index.css" />
+<!--<link rel="stylesheet" href="/lib/bootstrap/bootstrap.min.css" />-->
+<!--<link rel="stylesheet" href="./index.css" />-->
 
-<html>
-    <head>
-        <link rel="stylesheet" href="/kanbas/Account/Profile/styles.css"
-    </head>
-    <body>
+<!--<html>-->
+<!--    <head>-->
+<!--        <link rel="stylesheet" href="/kanbas/Account/Profile/styles.css"-->
+<!--    </head>-->
+<!--    <body>-->
 
 
-        <table border="1" width="100%">
-            <tr>
-                <td valign="top">
-                    <ul>
-                        <li><a href="/kanbas/Account/Profile/profile.html">Account</a></li>
-                        <li><a href="/kanbas/Courses/Home/screen.html">Dashboard</a></li>
-                        <li><a href="/kanbas/Courses/Home/screen.html">Courses</a></li>
-                    </ul>
-                </td>
-                <td valign="top">
-                    <ul>
-                        <li><a href="/kanbas/Courses/Home/screen.html">Home</a></li>
-                        <li><a href="/kanbas/Courses/Modules/index.html">Modules</a></li>
-                        <li><a href="/kanbas/Courses/Assignments/screen.html">Assignments</a></li>
-                        <li><a href="/kanbas/Courses/Grades/screen.html">Grades</a></li>
-                    </ul>
-                </td>
-                <td valign="top">
-                    <label for="assignmentName">Assignment Name</label> <br />
-                    <input 
-                        type="text"
-                        class="form-control"
-                        value="Assignment 1 - HTML" 
-                        id="assignmentName" 
-                        placeholder="Assignment name" 
-                    />
-                    <h3>Description</h3>
-                    <textarea class="form-control" cols="50" rows="5">
-                    This is the first assignment to build Kanbas
-                    </textarea>
+<!--        <table border="1" width="100%">-->
+<!--            <tr>-->
+<!--                <td valign="top">-->
+<!--                    <ul>-->
+<!--                        <li><a href="/kanbas/Account/Profile/profile.html">Account</a></li>-->
+<!--                        <li><a href="/kanbas/Courses/Home/screen.html">Dashboard</a></li>-->
+<!--                        <li><a href="/kanbas/Courses/Home/screen.html">Courses</a></li>-->
+<!--                    </ul>-->
+<!--                </td>-->
+<!--                <td valign="top">-->
+<!--                    <ul>-->
+<!--                        <li><a href="/kanbas/Courses/Home/screen.html">Home</a></li>-->
+<!--                        <li><a href="/kanbas/Courses/Modules/index.html">Modules</a></li>-->
+<!--                        <li><a href="/kanbas/Courses/Assignments/screen.html">Assignments</a></li>-->
+<!--                        <li><a href="/kanbas/Courses/Grades/screen.html">Grades</a></li>-->
+<!--                    </ul>-->
+<!--                </td>-->
+<!--                <td valign="top">-->
+<!--                    <label for="assignmentName">Assignment Name</label> <br />-->
+<!--                    <input -->
+<!--                        type="text"-->
+<!--                        class="form-control"-->
+<!--                        value="Assignment 1 - HTML" -->
+<!--                        id="assignmentName" -->
+<!--                        placeholder="Assignment name" -->
+<!--                    />-->
+<!--                    <h3>Description</h3>-->
+<!--                    <textarea class="form-control" cols="50" rows="5">-->
+<!--                    This is the first assignment to build Kanbas-->
+<!--                    </textarea>-->
 
-                    <h3>Points</h3>
-                    <input class="form-control" value="100" type="number" max="100" min="50" step="2"/>
+<!--                    <h3>Points</h3>-->
+<!--                    <input class="form-control" value="100" type="number" max="100" min="50" step="2"/>-->
 
-                    <h3>Submission Type</h3>
-                    <input type="checkbox" id="textEntry" /> 
-                    <label for="textEntry">Text Entry</label><br />
-                    <input type="checkbox" checked /> Website URL <br />
-                    <input type="checkbox" /> Media Recordings <br />
-                    <input type="checkbox" /> File Uploads <br />
+<!--                    <h3>Submission Type</h3>-->
+<!--                    <input type="checkbox" id="textEntry" /> -->
+<!--                    <label for="textEntry">Text Entry</label><br />-->
+<!--                    <input type="checkbox" checked /> Website URL <br />-->
+<!--                    <input type="checkbox" /> Media Recordings <br />-->
+<!--                    <input type="checkbox" /> File Uploads <br />-->
 
-                    <h3>Due Date</h3>
-                    <input class="form-control" type="date" value="2020-09-06" min="2020-09-01" max="2020-09-09"/>
+<!--                    <h3>Due Date</h3>-->
+<!--                    <input class="form-control" type="date" value="2020-09-06" min="2020-09-01" max="2020-09-09"/>-->
 
-                    <h3>other</h3>
-                    <input class="form-control" type="color" value="#ff0000" />
-                    <input class="form-control" type="email" />
-                    <input class="form-control" type="Tel" />
-                </td>
-            </tr>
-        </table>
-    </body>
+<!--                    <h3>other</h3>-->
+<!--                    <input class="form-control" type="color" value="#ff0000" />-->
+<!--                    <input class="form-control" type="email" />-->
+<!--                    <input class="form-control" type="Tel" />-->
+<!--                </td>-->
+<!--            </tr>-->
+<!--        </table>-->
+<!--    </body>-->
+<!--</html>-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/lib/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="path_to_fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="./index.css">
+    <style>
+        .green-border-left {
+            border-left: 10px solid green;
+        }
+        h2 {
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Course Name</a></li>
+        <li class="breadcrumb-item"><a href="#">Term</a></li>
+        <li class="breadcrumb-item"><a href="#">Section</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Assignments</li>
+    </ol>
+</nav>
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-8">
+            <h1>Assignments</h1>
+        </div>
+        <div class="col-md-4 text-right">
+            <button class="btn btn-primary"><i class="fas fa-plus"></i> New Assignment</button>
+            <button class="btn btn-secondary"><i class="fas fa-search"></i> Search for Assignment</button>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <div class="col-md-12 green-border-left p-3">
+            <a href="index.html" style="text-decoration: none; color: inherit;">
+
+            <h2>A1 SETUP</h2>
+            <p>Due: 2020-09-06</p>
+            <p>Points: 100</p>
+        </div>
+    </div>
+    <hr>
+    <div class="row mt-4">
+        <div class="col-md-12 green-border-left p-3">
+            <a href="index.html" style="text-decoration: none; color: inherit;">
+            <h2>A2 HTML</h2>
+            <p>Due: 2020-09-08</p>
+            <p>Points: 90</p>
+        </div>
+    </div>
+    <hr>
+    <div class="row mt-4">
+        <div class="col-md-12 green-border-left p-3">
+            <a href="index.html" style="text-decoration: none; color: inherit;">
+            <h2>A2 HTML</h2>
+            <p>Due: 2020-09-08</p>
+            <p>Points: 90</p>
+        </div>
+    </div>
+    <hr>
+    <div class="row mt-4">
+        <div class="col-md-12 green-border-left p-3">
+            <a href="index.html" style="text-decoration: none; color: inherit;">
+            <h2>A2 HTML</h2>
+            <p>Due: 2020-09-08</p>
+            <p>Points: 90</p>
+        </div>
+    </div>
+    <hr>
+    <div class="row mt-4">
+        <div class="col-md-12 green-border-left p-3">
+            <a href="index.html" style="text-decoration: none; color: inherit;">
+            <h2>A2 HTML</h2>
+            <p>Due: 2020-09-08</p>
+            <p>Points: 90</p>
+        </div>
+    </div>
+    <hr>
+    <div class="row mt-4">
+        <div class="col-md-12 green-border-left p-3">
+            <a href="index.html" style="text-decoration: none; color: inherit;">
+            <h2>A2 HTML</h2>
+            <p>Due: 2020-09-08</p>
+            <p>Points: 90</p>
+        </div>
+    </div>
+    <hr>
+    <div class="row mt-4">
+        <div class="col-md-12 green-border-left p-3">
+            <a href="index.html" style="text-decoration: none; color: inherit;">
+            <h2>A2 HTML</h2>
+            <p>Due: 2020-09-08</p>
+            <p>Points: 90</p>
+        </div>
+    </div>
+    <hr>
+</div>
+
+<script src="/lib/bootstrap/bootstrap.min.js"></script>
+
+
+
+</body>
 </html>

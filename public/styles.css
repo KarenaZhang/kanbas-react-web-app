@@ -57,3 +57,73 @@ body * {
 .wd-flex-grow-1 {
     flex-grow: 1;
 }
+
+
+
+
+
+
+/* styles.css */
+body {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+/* Apply margins and padding to breadcrumb */
+.breadcrumb {
+    margin: 20px; /* Adjust margin as needed */
+    padding: 10px; /* Adjust padding as needed */
+}
+
+.breadcrumb-item {
+    margin: 0; /* Adjust margin as needed */
+    padding: 0 5px; /* Adjust padding as needed */
+}
+
+/* Apply padding to buttons */
+.btn {
+    padding: 10px 20px; /* Adjust padding as needed */
+}
+
+/* Apply margins and padding to sidebar */
+.wd-kanbas-navigation {
+    margin: 0; /* Adjust margin as needed */
+    padding: 10px; /* Adjust padding as needed */
+}
+
+/* Apply margins and padding to course navigation */
+.wd-course-navigation {
+    margin: 0; /* Adjust margin as needed */
+    padding: 10px; /* Adjust padding as needed */
+}
+
+/* Apply padding to the status bar */
+.wd-bg-color-green {
+    padding: 10px; /* Adjust padding as needed */
+}
+
+/* styles.css */
+/* Make hyperlinks red and remove underlines */
+a {
+    color: red; /* Set the text color to red */
+    text-decoration: none; /* Remove underlines */
+}
+
+/* styles.css */
+/* Make hyperlinks red and remove underlines */
+a {
+    color: red; /* Set the text color to red */
+    text-decoration: none; /* Remove underlines */
+}
+
+
+.container {
+    padding: 20px; /* Add padding around the container */
+}
+.table {
+    margin-bottom: 20px; /* Add margin below the table */
+}
+.btn {
+    margin-right: 10px; /* Add margin between buttons */
+}
+

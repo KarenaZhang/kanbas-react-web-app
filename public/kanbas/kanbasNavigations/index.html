@@ -2,21 +2,123 @@
 <link rel="stylesheet" href="index.css" />
 <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.css" />
 
-<ul class="wd-kanbas-navigation">
-    <li><a href="/kanbas/Account/Profile/screen.html">Account</a></li>
-    <li class="wd-active">
-        <a href="/kanbas/Dashboard/screen.html">
-            <i class="fa fa-tachometer" aria-hidden="true"></i>
-            Dashboard
-        </a>
-    </li>
-    <li><a href="/kanbas/Courses/Home/screen.html">Courses</a>
-    </li>
-    <li>
-        <a href="/kanbas/Calendar/screen.html">
-            <i class="fa fa-calendar" aria-hidden="true"></i>
-            Calendar
-        </a>
-    </li>
-    <li><a href="/kanbas/Messages/screen.html">Messages</a></li>
-</ul>
+<!--<ul class="wd-kanbas-navigation">-->
+<!--    <li>-->
+<!--        <a href="/kanbas/Account/screen.html">-->
+<!--            <i class="fa fa-calendar" aria-hidden="true"></i>-->
+<!--            Account-->
+<!--        </a>-->
+<!--    </li>-->
+<!--    <li class="wd-active">-->
+<!--        <a href="/kanbas/Dashboard/screen.html">-->
+<!--            <i class="fa fa-tachometer" aria-hidden="true"></i>-->
+<!--            Dashboard-->
+<!--        </a>-->
+<!--    </li>-->
+<!--    <li><a href="/kanbas/Courses/Home/screen.html">Courses</a>-->
+<!--    </li>-->
+<!--    <li>-->
+<!--        <a href="/kanbas/Calendar/screen.html">-->
+<!--            <i class="fa fa-calendar" aria-hidden="true"></i>-->
+<!--            Calendar-->
+<!--        </a>-->
+<!--    </li>-->
+<!--    <li><a href="/kanbas/Messages/screen.html">Messages</a></li>-->
+<!--</ul>-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.css">
+    <style>
+        /* Sidebar styles */
+        .wd-sidebar {
+            width: 80px;
+            background-color: black;
+            padding: 10px 5px;
+            text-align: center;
+        }
+
+        /* Sidebar links styles */
+        .wd-sidebar li {
+            list-style: none;
+            margin: 5px 0; /* Set margin between 5px and 10px */
+            padding: 5px 10px; /* Set padding between 5px and 10px */
+            text-align: center;
+        }
+
+        /* Default link styles */
+        .wd-sidebar li a {
+            text-decoration: none;
+            color: white; /* White text for non-selected links */
+            display: block;
+            padding: 5px 0;
+        }
+
+        /* Red icons for non-Account links */
+        .wd-sidebar .fa {
+            color: red;
+        }
+
+        /* White icon for the Account link */
+        .wd-sidebar .fa.fa-calendar {
+            color: white;
+        }
+
+        /* Selected link styles */
+        .wd-active {
+            background-color: white; /* White background for selected link */
+        }
+
+        /* Red text for selected link */
+        .wd-active a {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<!-- Sidebar Navigation -->
+<div class="wd-sidebar">
+    <ul class="wd-kanbas-navigation">
+        <!-- Account Link -->
+        <li>
+            <a href="/kanbas/Account/screen.html">
+                <i class="fa fa-calendar" aria-hidden="true"></i>
+                Account
+            </a>
+        </li>
+        <!-- Dashboard Link -->
+        <li class="wd-active">
+            <a href="/kanbas/Dashboard/screen.html">
+                <i class="fa fa-tachometer" aria-hidden="true"></i>
+                Dashboard
+            </a>
+        </li>
+        <!-- Courses Link -->
+        <li>
+            <a href="/kanbas/Courses/Home/screen.html">
+                <i class="fa fa-book" aria-hidden="true"></i>
+                Courses
+            </a>
+        </li>
+        <!-- Calendar Link -->
+        <li>
+            <a href="/kanbas/Calendar/screen.html">
+                <i class="fa fa-calendar" aria-hidden="true"></i>
+                Calendar
+            </a>
+        </li>
+        <!-- Messages Link -->
+        <li>
+            <a href="/kanbas/Messages/screen.html">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                Messages
+            </a>
+        </li>
+    </ul>
+</div>
+</body>
+</html>
