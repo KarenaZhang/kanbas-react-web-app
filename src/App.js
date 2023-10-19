@@ -1,26 +1,19 @@
-import { useState, useEffect } from 'react';
-import './App.css';
+import Labs from "./Labs";
+import HelloWorld from "./Labs/a3/HelloWorld";
+import Kanbas from "./Kanbas";
+import {HashRouter} from "react-router-dom";
+import {Routes, Route, Navigate} from "react-router";
 
 function App() {
-  const [home, setHome] = useState(null);
-
-  useEffect(() => {
-    fetch("/kanbas/Courses/Home/screen.html")
-      .then(result => {
-        if (!result.ok) {
-          throw new Error('Failed to fetch HTML file');
-        }
-        return result.text();
-      })
-      .then(page => setHome({ page: { __html: page } }))
-      .catch(error => console.error(error));
-  }, [])
-
-  return (
-    <div className="App">
-      <div dangerouslySetInnerHTML={home && home.page} />
-    </div>
-  );
+    return (
+        <HashRouter>
+            <Routes>
+                <Route path="/"         element={<Navigate to="/labs" />} />
+                <Route path="/hello"    element={<HelloWorld />} />
+                <Route path="/labs/*"   element={<Labs />} />
+                <Route path="/Kanbas/*" element={<Kanbas />} />
+            </Routes>
+        </HashRouter>
+    );
 }
-
 export default App;
