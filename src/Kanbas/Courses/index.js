@@ -33,6 +33,7 @@ import Grades from "./Grades";
 
 function Courses() {
     const { courseId } = useParams();
+    console.log("courseId: "+courseId);
     const course = db.courses.find((course) => course._id === courseId);
     return (
         <div>
@@ -56,3 +57,6 @@ function Courses() {
 
 
 export default Courses;
+
+
+
