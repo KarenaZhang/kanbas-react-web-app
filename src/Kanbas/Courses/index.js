@@ -5,6 +5,9 @@ import Assignments from "./Assignments";
 import AssignmentEditor from "./Assignments/AssignmentEditor";
 import Home from "./Home";
 import Grades from "./Grades";
+//import "./index.css"
+//import Breadcrumb from "./Breadcrumb"
+//import Settings from "./Settings";
 
 function Courses({ courses }) {
     const { courseId } = useParams();

@@ -3,8 +3,8 @@ import { useSelector, useDispatch } from "react-redux";
 import { increment1, decrement1, setTo } from "./counterReducer1";
 
 function Counter1() {
-    const count1 = useSelector((state) => state.counter1Reducer.count1);
-    const count2 = useSelector((state) => state.counter2Reducer.count2);
+    const {count1} = useSelector((state) => state.counter1Reducer.count1);
+    const {count2} = useSelector((state) => state.counter2Reducer.count2);
     const dispatch = useDispatch();
 
     return (

@@ -7,7 +7,6 @@ const initialState = {
     assignment: { name: "New Assignment 123", description: "New Description" },
 };
 
-
 const assignmentsSlice = createSlice({
     name: "assignments",
     initialState,

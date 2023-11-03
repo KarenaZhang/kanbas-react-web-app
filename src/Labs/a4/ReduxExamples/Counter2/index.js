@@ -4,8 +4,8 @@ import { increment2, decrement2, setTo } from "./counterReducer2";
 import Counter1 from "../Counter1";
 
 function Counter2() {
-    const { count2 } = useSelector((state) => state.counter2Reducer);
-    const { count1 } = useSelector((state) => state.counter1Reducer);
+    const { count2 } = useSelector((state) => state.counterReducer2);
+    const { count1 } = useSelector((state) => state.counterReducer1);
     const dispatch = useDispatch();
 
     return (
