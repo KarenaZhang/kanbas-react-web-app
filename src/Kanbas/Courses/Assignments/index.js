@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import "./index.css";
 import { FaEllipsisV } from "react-icons/fa";
@@ -8,17 +8,42 @@ import { BsFillTrashFill } from "react-icons/bs";
 import { AiOutlinePlus } from "react-icons/ai";
 import { useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
-import { setAssignment } from "./assignmentsReducer";
+import {
+    setAssignment,
+    addAssignment,
+    deleteAssignment,
+    updateAssignment,
+    setAssignments,
+} from "./assignmentsReducer";
 import DeleteConfirm from "./deleteConfirm.js";
-
+import * as client from "./client";
 
 function Assignments() {
     const { courseId } = useParams();
+    useEffect( () => {
+        client.findAssignmentsForCourse(courseId)
+            .then((assignments) =>
+                dispatch(setAssignments(assignments))
+            );
+    }, [courseId]);
+    const handleAddAssignment = () => {
+        client.createAssignment(courseId, assignment).then((assignment) => {
+            dispatch(addAssignment(assignment));
+        });
+    };
+    const handleDeleteAssignment = (assignmentId) => {
+        client.deleteAssignment(assignmentId).then((status) => {
+            dispatch(deleteAssignment(assignmentId));
+        });
+    };
+    const handleUpdateAssignment = async () => {
+        const status = await client.updateAssignment(assignment);
+        dispatch(updateAssignment(assignment));
+    };
     const assignments = useSelector((state) => state.assignmentsReducer.assignments);
     const assignment = useSelector((state) => state.assignmentsReducer.assignment);
     const dispatch = useDispatch();
     const [showDeleteConfirm, setShowDeleteConfirm] = useState({open: false});
-
     const navigate = useNavigate();
     const courseAssignments = assignments.filter(
         (assignment) => assignment.course === courseId);
@@ -32,7 +57,7 @@ function Assignments() {
     return (
         <div>
             <h2>Assignments for course {courseId}</h2>
-            <DeleteConfirm state={showDeleteConfirm} setOpen={setShowDeleteConfirm}/>
+            <DeleteConfirm state={showDeleteConfirm} setOpen={setShowDeleteConfirm} handleDeleteAssignment={handleDeleteAssignment}/>
             <table className="wd-table-header">
                 <tbody>
                     <tr>

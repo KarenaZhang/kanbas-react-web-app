@@ -4,12 +4,12 @@ import {
     deleteAssignment,
 } from "./assignmentsReducer";
 
-function DeleteConfirm({ state, setOpen }) {
+function DeleteConfirm({state, setOpen, handleDeleteAssignment}){
     const assignment = useSelector((state) => state.assignmentsReducer.assignment);
     const dispatch = useDispatch();
 
     const handleDelete = () => {
-        dispatch(deleteAssignment(assignment._id));
+        handleDeleteAssignment(assignment._id);
         setOpen({ open: false });
     };
 

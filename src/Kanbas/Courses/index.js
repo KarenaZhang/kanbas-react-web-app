@@ -5,13 +5,27 @@ import Assignments from "./Assignments";
 import AssignmentEditor from "./Assignments/AssignmentEditor";
 import Home from "./Home";
 import Grades from "./Grades";
-//import "./index.css"
+import { useState, useEffect } from "react";
+import axios from "axios";
+import "./index.css"
 //import Breadcrumb from "./Breadcrumb"
 //import Settings from "./Settings";
 
-function Courses({ courses }) {
+function Courses() {
     const { courseId } = useParams();
-    const course = courses.find((course) => course._id === courseId);
+    const [course, setCourse] = useState({});
+    const API_BASE = process.env.REACT_APP_API_BASE;
+    const URL = `${API_BASE}/api/courses`;
+    const findCourseById = async (courseId) => {
+        const response = await axios.get(
+            `${URL}/${courseId}`
+        );
+        setCourse(response.data);
+    };
+    useEffect(() => {
+        findCourseById(courseId);
+    }, [courseId]);
+
 
     return (
         <div>
