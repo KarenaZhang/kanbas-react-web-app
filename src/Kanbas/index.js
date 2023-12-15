@@ -88,7 +88,7 @@ import db from "../Kanbas/Database"
 import { Routes, Route, Navigate } from "react-router"
 import Courses from "./Courses";
 import Account from "./Account";
-import Account2 from "../Kanbas/users/account.js";
+import Account2 from "../Kanbas/users/account";
 import Signin from "../Kanbas/users/signin";
 import Signup from "../Kanbas/users/signup";
 import UserTable from "../Kanbas/users/table";

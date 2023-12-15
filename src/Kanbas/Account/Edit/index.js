@@ -16,15 +16,15 @@ function Edit() {
                 <link rel="stylesheet" href="/styles.css" />
                 <link rel="stylesheet" href="/kanbas/Courses/CourseNavigation/index.css" />
                 <ul class="wd-course-navigation">
-                    <li><a href="#">Notifications</a></li>
+                    <li><a href="/#">Notifications</a></li>
                     <li class="wd-active"><a href="/Kanbas/Account/Profile/index.html">Profile</a></li>
-                    <li><a href="#">Files</a></li>
+                    <li><a href="/#">Files</a></li>
                     <li><a href="/Kanbas/Courses/Settings/Details/screen.html">Settings</a></li>
-                    <li><a href="#">ePortfolios</a></li>
-                    <li><a href="#">Shared Content</a></li>
-                    <li><a href="#">The Hub</a></li>
-                    <li><a href="#">Qwickly Course Tools</a></li>
-                    <li><a href="#">Global Announcements</a></li>
+                    <li><a href="/#">ePortfolios</a></li>
+                    <li><a href="/#">Shared Content</a></li>
+                    <li><a href="/#">The Hub</a></li>
+                    <li><a href="/#">Qwickly Course Tools</a></li>
+                    <li><a href="/#">Global Announcements</a></li>
                 </ul>
             </div>
             <div class="wd-flex-grow-1">
@@ -45,9 +45,9 @@ function Edit() {
                 <label>Title:</label><input class='form-control' type="text" name="name" value="Samuel Tomlinson" />
 
                 <h2>Contact</h2>
-                <div>No reigstered services, you can add some on the <a href="#">settings</a> page.</div>
+                <div>No reigstered services, you can add some on the <a href="/#">settings</a> page.</div>
                 <h2>Contact</h2>
-                <div>No reigstered services, you can add some on the <a href="#">settings</a> page.</div>
+                <div>No reigstered services, you can add some on the <a href="/#">settings</a> page.</div>
                 <h2>Biography</h2>
                 <textarea  class='form-control'>Student, Software Engineer, AI, Space</textarea>
                 <h2>Links</h2>
@@ -59,7 +59,7 @@ function Edit() {
                         <div class="w-100"></div>
                         <div class="col"><input type="text" name="name" value="Youtube" /></div>
                         <div class="col"><input type="text" name="name" value="www.youtube.com" /></div>
-                        <div class="col"><a href="#">Remove</a></div>
+                        <div class="col"><a href="/#">Remove</a></div>
                         <div class="w-100"></div>
                         <div class="col"><button class="btn btn-secondary">Add another link</button></div>
                         <div class="w-100"></div>
